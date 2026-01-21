@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing:border-box;
+
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4203a9, #90bafc);
+    color: #fff;
+    padding: 10px;
+}
+.calculator{
+    width: 100%;
+    max-width: 600px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.calculator h1{
+    font-size: 60px;
+
+}
+.calculator h1 span{
+    color: #ffff76;
+}
+.input-box{
+    margin: 40px 0;
+    padding: 35px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+ 
+    justify-content:space-between;
+}
+.input-box input{
+    flex: 1;
+    margin-right:20px;
+    max-width: 300rem;
+    width: 200rem;
+    padding: 14px 20px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    position: relative;
+}
+.input-box button{
+    width: 100px;
+    max-width: 100px;
+    background: #ffff76;
+    border: 0;
+    outline: 0;
+    align-content: center;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.input-box button:hover{
+    background-color: #ebeb06;
+    font-weight: 600;
+    box-sizing: border-box;
+    max-width: 100px;
+    width: 100px;
+    
+}
+.input-box input::-webkit-calendar-picker-indicator{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position:calc(100% - 10px) center;
+    background-size: 30px;
+    cursor: pointer;
+     
+}
+#result{
+    font-size: 20px;
+}
+#result span{
+    color: #ebeb06;
+}
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0px 30px 30px;
+    color: #333;
+    height: 21rem;
+    width: 27rem;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    
+}
+
+.calculatAge{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+
+}
+.popup img{
+    width: 100px;
+    margin-top: 30px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2{
+    margin: 30px 0px 10px;
+    font-size: 38px;
+    font-weight: 500;
+     
+}
+#pbutton{
+    max-width: 100%;
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
